@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+  <meta charset="utf-8">
+  <title>Jamie Jeon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="description" content="Atlanta Humane Society">
+  <meta name="Keywords" content="Atlanta Humane Society">
+  <link rel="shortcut icon" href="../../css/images/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="../../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../../css/responsive.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- HEADER -->
+    <header id="header">
+    </header>
+    <!--- LOAD HEADER FROM JS -->
+    <script src="../../js/generate-header.js"></script>
+    <!-- MAIN -->
+    <main class="main-content">
+      <section class="intro">
+        <h1>Adopt</h1>
+        <p>Adoptable dogs and puppies at the Atlanta Humane Society. Find the perfect dog or puppy by searching or
+          browsing our adoptable pets below. Why buy a dog or puppy when you can adopt your new best friend? All of our
+          adoptable dogs and puppies below have had a complete veterinary checkup, come spayed or neutered, updated on
+          shots, insured, microchipped, and with a free bag of Purina One.</p>
+      </section>
+      <section class="adoption-search-section">
+        <form class="adoption-search-form" method="post" action="">
+          <fieldset>
+            <ul>
+              <li>
+                <label>Animal Type</label>
+                <select name="animal-type" id="animal-type" onChange="filterList()">
+                  <option>All</option>
+                  <option>Dog</option>
+                  <option>Cat</option>
+                </select>
+              </li>
+              <li>
+                <label>Age</label>
+                <select name="age" id="age" onChange="filterList()">
+                  <option>All</option>
+                  <option>Kitten/Puppy</option>
+                  <option>Young</option>
+                  <option>Adult</option>
+                  <option>Senior</option>
+                </select>
+              </li>
+              <li>
+                <label>Gender</label>
+                <select name="gender" id="gender" onChange="filterList()">
+                  <option>All</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>
+              </li>
+              <li>
+                <label>Location</label>
+                <select name="location" id="location" onChange="filterList()">
+                  <option>All</option>
+                  <option>Duluth Highway</option>
+                  <option>Howell Mill Road</option>
+                  <option>Mansell Road</option>
+                </select>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </section>
+      <!--- Pet adoption list -->
+      <section class="inner-content-section">
+        <div class="inner-content">
+          <div class="adoptable-pet-list" id="filterable-animal-list"> </div>
+        </div>
+      </section>
+      <!-- FOOTER -->
+      <footer id="footer">
+      </footer>
+    </main>
+  </div>
+</body>
+<!-- LOAD FOOTER FROM JS -->
+<script src="../../js/generate-footer.js"></script>
+
+<script src="../../js/mobile-menu.js"></script>
+<script type="text/javascript" src="../../js/animal-data.js"></script>
+<script type="text/javascript" src="../../js/animal-filter.js"></script>
+<script src="https://kit.fontawesome.com/17cc6bf999.js" crossorigin="anonymous"></script>
+
+</html>
