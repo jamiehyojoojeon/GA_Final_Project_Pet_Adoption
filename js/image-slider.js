@@ -2,7 +2,7 @@ const prevBtn = document.querySelector('.prev');
 const slideImage = document.querySelector('#slideImages');
 const nextBtn = document.querySelector('.next');
 
-const images = ['css/images/pet-adoption1.jpg', 'css/images/pet-adoption2.jpg', 'css/images/pet-adoption3.jpg'];
+const images = ['./css/images/pet-adoption1.jpg', './css/images/pet-adoption2.jpg', './css/images/pet-adoption3.jpg'];
 
 let currentImage = 0;
 
