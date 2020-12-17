@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HomeMainPage from './components/home-main-page';
+import { BrowserRouter } from 'react-router-dom';
+import AppRouter from './components/app-router';
 import './css/style.css';
 import './css/responsive.css';
 import './css/pet-image-box.css';
@@ -14,6 +15,8 @@ import './css/pet-image-box.css';
 // ========================================
 
 ReactDOM.render(
-  <HomeMainPage />,
+  <BrowserRouter>
+    <AppRouter />
+  </BrowserRouter>,
   document.getElementById('root')
 );

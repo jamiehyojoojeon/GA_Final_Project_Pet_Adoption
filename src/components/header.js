@@ -1,14 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../css/images/logo-ahs.png';
 
 class Header extends React.Component {
     render() {
         return (
-            <header>
+            <header id="header">
                 <div class="logo">
-                    <a href="${root}index.html">
+                    <Link to='/'>
                         <img src={logo} />
-                    </a>
+                    </Link>
                 </div>
                 <div class="mobile-menu" id="mobile-menu">
                     <i class="fas fa-bars"></i>

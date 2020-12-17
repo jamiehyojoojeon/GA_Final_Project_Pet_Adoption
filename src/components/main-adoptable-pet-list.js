@@ -1,64 +1,73 @@
 import React from 'react';
+import Nacho from '../css/images/nacho1.jpg'
+import Willy from '../css/images/willy1.jpg'
+import Hercules from '../css/images/hercules1.jpg'
+import Happy from '../css/images/happy.jpg'
 
 class MainAdoptablePetList extends React.Component {
     render() {
         return (
+            // Make a reusable component for each pet 
             <section class="main-adoptable-pet">
                 <div class="main-adoptable-pet-container">
                     <h1>Pets Available for Adoption</h1>
                     <ul class="main-adoptable-pet-list">
-                        <li class="main-adoptable-pet-item one">
-                            <a href="adopt/adopt-pet/pet/?id=0">
-                                <img src="css/images/nacho1.jpg" alt="" />
-                                <div class="adoptable-pet-info-container">
-                                    <div class="pet-info">
-                                        <h3>Nacho</h3>
-                                        <p class="breed">Bombay</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="main-adoptable-pet-item two">
-                            <a href="adopt/adopt-pet/pet/?id=1">
-                                <img src="css/images/willy1.jpg" alt="" />
-                                <div class="adoptable-pet-info-container">
-                                    <div class="pet-info">
-                                        <h3>Willy</h3>
-                                        <p class="breed">American Staffordshire Terrier</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="main-adoptable-pet-item three">
-                            <a href="adopt/adopt-pet/pet/?id=2">
-                                <img src="css/images/hercules1.jpg" alt="" />
-                                <div class="adoptable-pet-info-container">
-                                    <div class="pet-info">
-                                        <h3>Hercules</h3>
-                                        <p class="breed">German Shepherd Mix</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="main-adoptable-pet-item four">
-                            <a href="adopt/adopt-pet/pet/?id=3">
-                                <img src="css/images/happy.jpg" alt="" />
-                                <div class="adoptable-pet-info-container">
-                                    <div class="pet-info">
-                                        <h3>Happy</h3>
-                                        <p class="breed">Domestic Short Hair</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
+                        <PetInfo
+                            image={Nacho}
+                            name='Nacho'
+                            breed='Bombay'
+                        />
+                        <PetInfo
+                            image={Willy}
+                            name='Willy'
+                            breed='American Staffordshire Terrier'
+                        />
+                        <PetInfo
+                            image={Hercules}
+                            name='Hercules'
+                            breed='German Shepherd Mix'
+                        />
+                        <PetInfo
+                            image={Happy}
+                            name='Happy'
+                            breed='Domestic Short Hair'
+                        />
                     </ul>
-                    <div class="adoptable-pet-btn">
-                        <a href="adopt/adopt-pet/index.html">
-                            <h3>Meet more pets available</h3>
-                        </a>
-                    </div>
+                    <AvailablePetButton />
                 </div>
             </section>
+        );
+    }
+}
+
+// TODO: Need to fix link
+class PetInfo extends React.Component {
+    render() {
+        return (
+            <li class="main-adoptable-pet-item">
+                <a href="adopt/adopt-pet/pet/?id=0">
+                    <img src={this.props.image} alt="" />
+                    <div class="adoptable-pet-info-container">
+                        <div class="pet-info">
+                            <h3>{this.props.name}</h3>
+                            <p class="breed">{this.props.breed}</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        );
+    }
+}
+
+// TODO: Need to fix link
+class AvailablePetButton extends React.Component {
+    render() {
+        return (
+            <div class="adoptable-pet-btn">
+                <a href="adopt/adopt-pet/index.html">
+                    <h3>Meet more pets available</h3>
+                </a>
+            </div>
         );
     }
 }
