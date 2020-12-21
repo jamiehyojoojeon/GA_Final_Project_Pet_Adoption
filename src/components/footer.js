@@ -1,4 +1,7 @@
 import React from 'react';
+import campusImage1 from '../css/images/footer-1.jpg';
+import campusImage2 from '../css/images/footer-2.jpg';
+import campusImage3 from '../css/images/footer-3.jpg';
 
 class Footer extends React.Component {
     render() {
@@ -9,17 +12,17 @@ class Footer extends React.Component {
                         <div class="footer-list">
                             <div class="footer-location duluth">
                                 <h3>DULUTH CAMPUS</h3>
-                                <img src="https://atlantahumane.org/wp-content/uploads/2019/03/2019-03-duluth-800x420-01.jpg"
+                                <img src={campusImage1}
                                     width="200" height="100" />
                             </div>
                             <div class="footer-location howellmill">
                                 <h3>HOWELL MILL CAMPUS</h3>
-                                <img src="https://atlantahumane.org/wp-content/uploads/2018/03/ahs-howell-mill-01-800x420-1.jpg"
+                                <img src={campusImage2}
                                     width="200" height="100" />
                             </div>
                             <div class="footer-location mansell">
                                 <h3>MANSELL CAMPUS</h3>
-                                <img src="https://atlantahumane.org/wp-content/uploads/2018/03/ahs-mansell-01-800x420.jpg" width="200"
+                                <img src={campusImage3} width="200"
                                     height="100" />
                             </div>
                         </div>

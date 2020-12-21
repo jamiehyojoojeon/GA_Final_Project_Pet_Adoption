@@ -12,7 +12,23 @@ class PetImageCarousel extends React.Component {
         }
     }
 
+    componentDidMount() {
+        this.autoSlide();
+    }
+
+    componentWillUnmount() {
+        clearTimeout(this.timeOut);
+    }
+
+    autoSlide() {
+        clearTimeout(this.timeOut);
+        this.timeOut = setTimeout(() => {
+            this.SlideRight();
+        }, 3000);
+    }
+
     SlideRight() {
+        this.autoSlide();
         let newIndex = this.state.currentImage + 1;
         if (newIndex >= this.state.images.length) {
             newIndex = 0;
@@ -24,6 +40,7 @@ class PetImageCarousel extends React.Component {
     }
 
     SlideLeft() {
+        this.autoSlide();
         let newIndex = this.state.currentImage - 1;
         if (newIndex < 0) {
             newIndex = this.state.images.length - 1;
