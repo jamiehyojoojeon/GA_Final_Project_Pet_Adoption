@@ -6,21 +6,21 @@ class Header extends React.Component {
     render() {
         return (
             <header id="header">
-                <div class="logo">
+                <div className="logo">
                     <Link to='/'>
                         <img src={logo} />
                     </Link>
                 </div>
-                <div class="mobile-menu" id="mobile-menu">
-                    <i class="fas fa-bars"></i>
+                <div className="mobile-menu" id="mobile-menu">
+                    <i className="fas fa-bars"></i>
                 </div>
-                <nav class="menu" id="top-nav">
-                    <ul class="menu-ul">
+                <nav className="menu" id="top-nav">
+                    <ul className="menu-ul">
                         <li>
                             <a href="${root}adopt/adopt-pet/index.html">
                                 ADOPT
                   </a>
-                            <ul class="dropdown-menu dropdown-menu-1">
+                            <ul className="dropdown-menu dropdown-menu-1">
                                 <li>
                                     <a href="${root}adopt/adopt-pet/index.html">
                                         Pet Adoption
@@ -34,31 +34,32 @@ class Header extends React.Component {
                             </ul>
                         </li>
                         <li>
-                            <a href="${root}pet-service/spray-neuter/">
-                                SERVICES
-                 </a>
-                            <ul class="dropdown-menu dropdown-menu-2">
+                            <Link to="/service/spray-neuter">
+                                SERVICE
+                            </Link>
+                            <ul className="dropdown-menu dropdown-menu-2">
                                 <li>
-                                    <a href="${root}pet-service/spray-neuter/">
+                                    <Link to="/service/spray-neuter">
                                         Spray and Neuter
-                     </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="${root}pet-service/dog-training/">
+                                    <Link to="/service/dog-training">
                                         Dog Training
-                    </a>
+                                     </Link>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="${root}about-us/">
+                            <Link to="/about-us">
                                 ABOUT US
-                 </a>
+                            </Link>
+
                         </li>
                         <li>
-                            <a href="${root}contact/">
+                            <Link to="/contact">
                                 CONTACT
-                </a>
+                            </Link>
                         </li>
                     </ul>
                 </nav>

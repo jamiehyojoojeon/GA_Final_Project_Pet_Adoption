@@ -8,10 +8,10 @@ class MainAdoptablePetList extends React.Component {
     render() {
         return (
             // Make a reusable component for each pet 
-            <section class="main-adoptable-pet">
-                <div class="main-adoptable-pet-container">
+            <section className="main-adoptable-pet">
+                <div className="main-adoptable-pet-container">
                     <h1>Pets Available for Adoption</h1>
-                    <ul class="main-adoptable-pet-list">
+                    <ul className="main-adoptable-pet-list">
                         <PetInfo
                             image={Nacho}
                             name='Nacho'
@@ -44,13 +44,13 @@ class MainAdoptablePetList extends React.Component {
 class PetInfo extends React.Component {
     render() {
         return (
-            <li class="main-adoptable-pet-item">
+            <li className="main-adoptable-pet-item">
                 <a href="adopt/adopt-pet/pet/?id=0">
                     <img src={this.props.image} alt="" />
-                    <div class="adoptable-pet-info-container">
-                        <div class="pet-info">
+                    <div className="adoptable-pet-info-container">
+                        <div className="pet-info">
                             <h3>{this.props.name}</h3>
-                            <p class="breed">{this.props.breed}</p>
+                            <p className="breed">{this.props.breed}</p>
                         </div>
                     </div>
                 </a>
@@ -63,7 +63,7 @@ class PetInfo extends React.Component {
 class AvailablePetButton extends React.Component {
     render() {
         return (
-            <div class="adoptable-pet-btn">
+            <div className="adoptable-pet-btn">
                 <a href="adopt/adopt-pet/index.html">
                     <h3>Meet more pets available</h3>
                 </a>

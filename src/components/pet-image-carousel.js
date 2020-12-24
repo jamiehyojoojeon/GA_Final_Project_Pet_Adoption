@@ -53,12 +53,12 @@ class PetImageCarousel extends React.Component {
 
     render() {
         return (
-            <section class="main-top-contents">
-                <div class="slideshow-container">
+            <section className="main-top-contents">
+                <div className="slideshow-container">
                     <LeftButton
                         SlideLeft={() => this.SlideLeft()}
                     />
-                    <div class="slideshow-images">
+                    <div className="slideshow-images">
                         <img id="slideImages" src={this.state.images[this.state.currentImage]} />
                     </div>
                     <RightButton
@@ -73,10 +73,10 @@ class PetImageCarousel extends React.Component {
 class LeftButton extends React.Component {
     render() {
         return (
-            <div class="slideshow-btn prev"
+            <div className="slideshow-btn prev"
                 onClick={() => this.props.SlideLeft()}>
                 <div>
-                    <i class="fas fa-angle-left"></i>
+                    <i className="fas fa-angle-left"></i>
                 </div>
             </div>
         )
@@ -86,10 +86,10 @@ class LeftButton extends React.Component {
 class RightButton extends React.Component {
     render() {
         return (
-            <div class="slideshow-btn next"
+            <div className="slideshow-btn next"
                 onClick={() => this.props.SlideRight()}>
                 <div>
-                    <i class="fas fa-angle-right"></i>
+                    <i className="fas fa-angle-right"></i>
                 </div>
             </div>
         )
