@@ -17,19 +17,19 @@ class Header extends React.Component {
                 <nav className="menu" id="top-nav">
                     <ul className="menu-ul">
                         <li>
-                            <a href="${root}adopt/adopt-pet/index.html">
+                            <Link to="/adopt/pet-adoption">
                                 ADOPT
-                  </a>
+                            </Link>
                             <ul className="dropdown-menu dropdown-menu-1">
                                 <li>
-                                    <a href="${root}adopt/adopt-pet/index.html">
+                                    <Link to="/adopt/pet-adoption">
                                         Pet Adoption
-                      </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="${root}adopt/adoption-process/">
+                                    <Link to="/adopt/adoption-process">
                                         Adoption Process
-                      </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </li>
