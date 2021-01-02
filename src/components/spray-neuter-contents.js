@@ -5,8 +5,8 @@ import '../css/responsive.css';
 class SprayNeuterContents extends React.Component {
     render() {
         return (
-            <main class="main-content">
-                <section class="intro">
+            <main className="main-content">
+                <section className="intro">
                     <h1>Spray and Neuter</h1>
                     <p>The Atlanta Humane Society provides affordable spay and neuter services for owned cats and dogs in
                     Georgia thanks to the financial support and subsidization from partners including the Holland M.
@@ -14,11 +14,11 @@ class SprayNeuterContents extends React.Component {
                     Charitable Foundation, the Petco Foundation, PetSmart Charities and Georgia Department of
                     Agriculture.
 				</p>
-                    <div class="vet-info">
-                        <p class="vet-service">Low-cost spay/neuter appointments are open to the public and available
+                    <div className="vet-info">
+                        <p className="vet-service">Low-cost spay/neuter appointments are open to the public and available
                         Wednesday-
 						Saturday at the Atlanta Humane Society’s Howell Mill Campus in Atlanta</p>
-                        <div class="vet-img">
+                        <div className="vet-img">
                             <img src="https://atlantahumane.org/wp-content/uploads/2018/07/petco-foundation-logo-160x50.gif"
                                 alt="" />
                             <img src="https://atlantahumane.org/wp-content/uploads/2018/07/PetSmart-Charities-Grantee-Web-Badge-160x160.gif"
@@ -27,8 +27,8 @@ class SprayNeuterContents extends React.Component {
                     </div>
 
                 </section>
-                <section class="inner-content">
-                    <div class="vet-service-container">
+                <section className="inner-content">
+                    <div className="vet-service-container">
                         <h3>APPOINTMENT TIMES</h3>
                         <p>Check-in and check-out times for our low-cost spay and neuter clinics for all appointment dates
                         are
@@ -45,13 +45,13 @@ class SprayNeuterContents extends React.Component {
                                     Please note that there is a late fee if you check-out at 3:45 p.m. or later.
 					</p>
                     </div>
-                    <div class="vet-service-container">
+                    <div className="vet-service-container">
                         <h3>LOW-COST SPAY/NEUTER COSTS AT OUR HOWELL MILL CAMPUS</h3>
                         <p>Our spay/neuter services are subsidized by generous donors so that we can provide affordable
                         spay/neuter services to our Atlanta community. Appointments are open to all, but we do offer
                         further
 						reduced, low-income costs* for those who qualify.</p>
-                        <table class="vet-cost">
+                        <table className="vet-cost">
                             <thead>
                                 <tbody>
                                     <tr>

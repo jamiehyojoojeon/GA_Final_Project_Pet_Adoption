@@ -5,8 +5,8 @@ import '../css/responsive.css';
 class DogTrainingContents extends React.Component {
     render() {
         return (
-            <main class="main-content">
-                <section class="intro">
+            <main className="main-content">
+                <section className="intro">
                     <h1>Dog Training</h1>
                     <p><strong>Dog Training Courses Offered At the Atlanta Humane Society</strong></p>
                     <p>The Atlanta Humane Society offers a variety of classes for first timers as well as more advanced dog
@@ -28,30 +28,30 @@ class DogTrainingContents extends React.Component {
                         direction.
 				</p>
                 </section>
-                <section class="inner-content">
-                    <div class="training-container">
-                        <div class="training-menu-ul">
-                            <div class="training-menu-li">
+                <section className="inner-content">
+                    <div className="training-container">
+                        <div className="training-menu-ul">
+                            <div className="training-menu-li">
                                 <a href="#basic">
-                                    <i class="fas fa-paw"></i>
+                                    <i className="fas fa-paw"></i>
 								Basic<br />Obedience Classes
 							</a>
                             </div>
-                            <div class="training-menu-li">
+                            <div className="training-menu-li">
                                 <a href="#intermediate">
-                                    <i class="fas fa-paw"></i>
+                                    <i className="fas fa-paw"></i>
 								Intermediate<br /> Obedience Classes
 							</a>
                             </div>
-                            <div class="training-menu-li">
+                            <div className="training-menu-li">
                                 <a href="#private">
-                                    <i class="fas fa-paw"></i>
+                                    <i className="fas fa-paw"></i>
 								Private<br /> Dog Training
 							</a>
                             </div>
                         </div>
-                        <div class="training-details">
-                            <div id="basic" class="training-detail">
+                        <div className="training-details">
+                            <div id="basic" className="training-detail">
                                 <h3>BASIC OBEDIENCE CLASSES</h3>
                                 <p>
                                     The Atlanta Humane Society’s Basic Obedience classes give you the knowledge to have a
@@ -84,7 +84,7 @@ class DogTrainingContents extends React.Component {
                                     (though they are worth twice that) and include things other classes do not.
 							</p>
                             </div>
-                            <div id="intermediate" class="training-detail">
+                            <div id="intermediate" className="training-detail">
                                 <h3>Intermediate Obedience Classes</h3>
                                 <p>
                                     The Next Step class is a great way to take the foundation of training you and your dog
@@ -136,7 +136,7 @@ class DogTrainingContents extends React.Component {
                                     that your dog can show off his skills in public!
 							</p>
                             </div>
-                            <div id="private" class="training-detail">
+                            <div id="private" className="training-detail">
                                 <h3>Private Dog Training</h3>
                                 <p>
                                     You have a dog. You love your dog, but he has a few…quirks, let’s call them. And you’d
@@ -175,10 +175,10 @@ class DogTrainingContents extends React.Component {
                                     Leadership Protocols and Self-Control Exercises. It is never too late to have a great
                                     relationship with your dog!
 							</p>
-                                <div class="training-img">
+                                <div className="training-img">
                                     <img src="https://atlantahumane.org/wp-content/uploads/2012/09/dog_8882.jpg" alt="" />
                                 </div>
-                                <p class="private-lessons">
+                                <p className="private-lessons">
                                     All private lessons are held <strong>at the Atlanta Humane Society, either at the Howell
 									Mill Campus or the Mansell Campus.</strong> They are taught by our Behavior &
 								Training
@@ -214,7 +214,7 @@ class DogTrainingContents extends React.Component {
 								times listed. Please email us with your general availability, and we will respond with
 								specific dates and times to fit your criteria.
 							</p>
-                                <p class="training-p-color">
+                                <p className="training-p-color">
                                     <strong>Typically, Saturdays and Wednesday evenings fill first. If you have daytime
 									availability Tuesday-Thursday, you will likely get in sooner.</strong>
                                 </p>
