@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PetInfoList from './pet-data.js'
 import '../css/style.css';
 import '../css/responsive.css';
@@ -198,7 +199,7 @@ class PetListItem extends React.Component {
     render() {
         return (
             <div className="adoptable-pet-item">
-                <a href="">
+                <Link to={"/adopt/pet-adoption/" + this.props.PetInfo.id}>
                     <img src={this.props.PetInfo.images[0]} />
                     <div className="adoptable-pet-info-container">
                         <div className="pet-info">
@@ -208,7 +209,7 @@ class PetListItem extends React.Component {
                             <p className="gender">{this.props.PetInfo.gender}</p>
                         </div>
                     </div>
-                </a>
+                </Link>
             </div>
         )
     }

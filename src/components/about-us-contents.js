@@ -15,10 +15,10 @@ import AboutPDF8 from "../css/images/8Heartbeat_Spring_Cover.jpg";
 class AboutUsContents extends React.Component {
     render() {
         return (
-            <main className="main-content">
-                <section className="intro">
+            <main class="main-content">
+                <section class="intro">
                     <h1>About AHS</h1>
-                    <div className="about-img">
+                    <div class="about-img">
                         <img src={aboutImage} alt="" />
                     </div>
                     <p><strong>Our Heart’s Set on Animals</strong></p>
@@ -45,14 +45,14 @@ class AboutUsContents extends React.Component {
                         our community partners to save lives.
                         </p>
                 </section>
-                <section className="inner-content">
-                    <div className="about-us-container">
-                        <div className="about-us-content">
+                <section class="inner-content">
+                    <div class="about-us-container">
+                        <div class="about-us-content">
                             <h3>Mission and Vision</h3>
-                            <div className="mv-img">
+                            <div class="mv-img">
                                 <img src={aboutImage2} alt="" />
                             </div>
-                            <div className="mv-p">
+                            <div class="mv-p">
                                 <p>
                                     <strong>The mission</strong> of the Atlanta Humane Society is to improve animal welfare
                                         in
@@ -69,15 +69,15 @@ class AboutUsContents extends React.Component {
                             </div>
 
                         </div>
-                        <div className="about-us-content">
+                        <div class="about-us-content">
                             <h3>The Heartbeat</h3>
-                            <div className="mv-p">
+                            <div class="mv-p">
                                 <p>
                                     The Heartbeat is our supporter newsletter and is full of inspiring stories about the
                                     lifesaving work that is made possible thanks to our community’s support.
                                     </p>
                             </div>
-                            <div className="heartbeat-img">
+                            <div class="heartbeat-img">
                                 <nav>
                                     <ul>
                                         <AboutUsPDFFile

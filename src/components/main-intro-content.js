@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class MainIntroContent extends React.Component {
     render() {
@@ -25,7 +26,9 @@ class MainIntroContent extends React.Component {
                   With a heart to better lives, we connect homeless animals with good homes and neglected animals with
                   safe
                   spaces—uplifting our community by instilling compassion.
-                <a className="dot-color" href="about-us/index.html">[...]</a>
+                  <Link className="dot-color" to="/about-us">
+                                [...]
+                  </Link>
                         </p>
                     </div>
                 </section>

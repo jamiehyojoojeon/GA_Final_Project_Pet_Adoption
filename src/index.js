@@ -15,7 +15,7 @@ import './css/pet-image-box.css';
 // ========================================
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename={"/pet-adoption"}>
     <AppRouter />
   </BrowserRouter>,
   document.getElementById('root')
