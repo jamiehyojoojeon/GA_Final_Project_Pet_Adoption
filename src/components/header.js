@@ -3,6 +3,19 @@ import { Link } from 'react-router-dom';
 import logo from '../css/images/logo-ahs.png';
 
 class Header extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            displayMobileMenu: false,
+        }
+    }
+
+    switchMobileMenu() {
+        this.setState({
+            displayMobileMenu: !this.state.displayMobileMenu
+        })
+    }
+
     render() {
         return (
             <header id="header">
@@ -11,10 +24,11 @@ class Header extends React.Component {
                         <img src={logo} />
                     </Link>
                 </div>
-                <div className="mobile-menu" id="mobile-menu">
+                <div className="mobile-menu" onClick={() => this.switchMobileMenu()}>
                     <i className="fas fa-bars"></i>
                 </div>
-                <nav className="menu" id="top-nav">
+                <nav className={this.state.displayMobileMenu ? "menu toggle-open" : "menu"}
+                    onClick={() => this.switchMobileMenu()}>
                     <ul className="menu-ul">
                         <li>
                             <Link to="/adopt/pet-adoption">

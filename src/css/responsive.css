@@ -21,10 +21,10 @@
 		margin: 20px;
 		
 	}
-	#top-nav.toggle-open{
+	.toggle-open{
 		  opacity: 1; 
 		  transition: 0.2s ease;
-		  display: block;
+		  display: block !important;
 	}
 	
 	.menu{
